@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="#">
-        <img src="img/logo.svg" width="140" height="72" alt="Герб города Седона">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.svg" width="170" height="70" alt="Герб города Седона">
       </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -63,12 +66,10 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <table class="price-output">
-              <tr>
-                <td>От 0</td>
-                <td>До 3000</td>
-              </tr>
-          </table>
+          <div class="price-option">
+            <label>от<input type="text" value="0"></label>
+            <label>до<input type="text" value="3000"></label>
+          </div>
           <input class="visually-hidden filter-input filter-input-range" type="range" name="price" min="0" max="4000">
           <button type="submit" class="filter-button button">Показать</button>
         </fieldset>
@@ -81,14 +82,14 @@
       <p class="sort-category">
         Сортировка:
         <ul>
-          <li class="sort-item">По цене</li>
-          <li class="sort-item">По типу</li>
-          <li class="sort-item">По рейтингу</li>
+          <li class="sort-item"><a href="#">По цене</a></li>
+          <li class="sort-item"><a href="#">По типу</a></li>
+          <li class="sort-item"><a href="#">По рейтингу</a></li>
         </ul>
       </p>
       <div class="sort-btn">
-        <button type="button" name="button-up">По возрастанию</button>
-        <button type="button" name="button-down">По убыванию</button>
+        <a href="#">По возрастанию</a>
+        <a href="#">По убыванию</a>
       </div>
     </section>
 
