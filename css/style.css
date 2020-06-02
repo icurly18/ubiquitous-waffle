@@ -101,6 +101,8 @@ a {
 }
 
 .intro {
+  margin-bottom: 50px;
+
   text-align: center;
 }
 
@@ -108,16 +110,107 @@ a {
   color: #000000;
 }
 
+.intro p {
+  margin: 0;
+  padding: 0;
+}
+
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .feature-item {
+  width: 400px;
+
   text-align: center;
 }
 
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
+}
 
+.feature-item p {
+  margin: 0;
+}
+
+.features-list .blue-background {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-list .feature-with-icon {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.features-list .feature-with-icon::before {
+  position: absolute;
+  top: 55px;
+  content: "";
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.features-list .feature-house::before {
+  left: 162px;
+  width: 75px;
+  height: 72px;
+  background-position: -5px -5px;
+}
+
+.features-list .feature-food::before {
+  left: 163px;
+  width: 74px;
+  height: 70px;
+  background-position: -90px -5px;
+}
+
+.features-list .feature-souvenirs::before {
+  left: 168px;
+  width: 64px;
+  height: 76px;
+  background-position: -5px -87px;
+}
+
+.features-list .gray-background {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #eeeeee;
+}
+
+.hotel-search {
+  padding-top: 55px;
+  text-align: center;
+}
+
+.hotel-search b {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.hotel-search p {
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.modal-hotels-btn {
+  padding: 33px 140px;
+  border: none;
+  font: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #766357;
 }
