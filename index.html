@@ -12,7 +12,7 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="#">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта города Седона">
       </a>
       <ul class="site-navigation">
@@ -28,6 +28,7 @@
     <h1 class="visually-hidden">Город Седона, штат Аризона</h1>
 
     <section class="banner">
+      <a class="overlay">Маска</a>
       <img src="img/intro-welcome.svg" alt="Добро пожаловать в великолепную Седону" width="465" height="360">
     </section>
 
@@ -78,40 +79,42 @@
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      <button class="btn form-btn" type="button">Поиск гостиницы в Седоне</button>
       <form class="hotel-search-form" action="/sedona-mail" method="get">
-        <button class="modal-hotels-btn" type="button">Поиск гостиницы в Седоне</button>
-        <p class="hotel-search-item">
+        <div class="hotel-search-item">
           <label for="arrival">Дата заезда:</label>
           <input type="text" name="arrival" id="arrival" value="24 апреля 2017">
-        </p>
-        <p class="hotel-search-item">
+        </div>
+        <div class="hotel-search-item">
           <label for="departure">Дата выезда:</label>
           <input type="text" name="departure" id="departure" value="4 июля 2017">
-        </p>
-        <p class="hotel-search-item">
+        </div>
+        <div class="hotel-search-item">
           <label for='adults'>Взрослые:</label>
           <input type="text" name='adults' id='adults' value="2">
-        </p>
-        <p class="hotel-search-item">
+        </div>
+        <div class="hotel-search-item">
           <label for='children'>Доп. номер:</label>
           <input type='text' name='children' id='children' value="0">
-        </p>
-        <input class="btn" type="submit" value="Найти">
+        </div>
+        <input class="btn search-btn" type="submit" value="Найти">
       </form>
     </section>
 
   </main>
 
   <footer class="main-footer">
-    <p>#visitsedona</p>
-    <ul class='social-media'>
-      <li class="social-media-item"><a class="social-btn social-btn-tw" href="#">Twitter</a></li>
-      <li class="social-media-item"><a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy">Facebook</a></li>
-      <li class="social-media-item"><a class="social-btn social-btn-yt" href="#">Youtube</a></li>
-    </ul>
-    <p class="footer-copyright">
-      Website by<a class="academy-pic" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    </p>
+    <div class="container">
+      <p class="footer-hashtag">#visitsedona</p>
+      <ul class='footer-social'>
+        <li class="social-item"><a class="social-btn social-btn-tw" href="#">Twitter</a></li>
+        <li class="social-item"><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+        <li class="social-item"><a class="social-btn social-btn-yt" href="#">Youtube</a></li>
+      </ul>
+      <p class="footer-copyright">
+        Website by<a class="academy-pic" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </p>
+    </div>
   </footer>
 
 </body>
