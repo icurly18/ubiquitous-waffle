@@ -13,13 +13,17 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта города Седона">
+        <img src="img/logo.svg" width="136" height="56" alt="Логотип сайта города Седона">
       </a>
       <ul class="site-navigation">
-        <li class="left-side"><a href="info.html">Информация</a></li>
-        <li class="left-side"><a href="photo-video.html">Фото и видео</a></li>
-        <li class="right-side"><a href="map.html">Карта штата</a></li>
-        <li class="right-side"><a href="hotels.html">Гостиницы</a></li>
+        <div class="left-side">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo-video.html">Фото и видео</a></li>
+        </div>
+        <div class="right-side">
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </div>
       </ul>
     </nav>
   </header>
@@ -28,7 +32,6 @@
     <h1 class="visually-hidden">Город Седона, штат Аризона</h1>
 
     <section class="banner">
-      <a class="overlay">Маска</a>
       <img src="img/intro-welcome.svg" alt="Добро пожаловать в великолепную Седону" width="465" height="360">
     </section>
 
@@ -39,40 +42,45 @@
 
     <section class="features">
       <h2 class="visually-hidden">Преимущества города Седона</h2>
-      <ul class="features-list">
-        <li class="feature-item blue-background">
+      <div class="features-container">
+        <div class="feature-and-picture">
           <h3>Настоящий городок</h3>
           <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
-        </li>
-        <li class="feature-item feature-with-icon feature-house">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-        </li>
-        <li class="feature-item feature-with-icon feature-food">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-        </li>
-        <li class="feature-item feature-with-icon feature-souvenirs">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного<br> производства!</p>
-        </li>
-        <li class="feature-item blue-background">
+          <img src="img/town.jpg" width="800" height="256" alt="Изображение города Седона">
+        </div>
+        <ul class="features-list-white">
+          <li class="feature-item feature-house">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+          </li>
+          <li class="feature-item feature-food">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="feature-item feature-souvenirs">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного<br> производства!</p>
+          </li>
+        </ul>
+        <div class="feature-and-picture">
           <h3>Там есть Мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-        </li>
-        <li class="feature-item gray-background">
-          <h3>Небольшая площадь</h3>
-          <p>Все достопримечательности<br> находятся очень близко</p>
-        </li>
-        <li class="feature-item gray-background">
-          <h3>Красивая дорога</h3>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
-        </li>
-        <li class="feature-item gray-background">
-          <h3>Мало туристов</h3>
-          <p>Большинство едет в Гранд Каньон<br> и толпится там</p>
-        </li>
-      </ul>
+        </div>
+        <ul class="features-list-gray">
+          <li class="feature-item">
+            <h3>Небольшая площадь</h3>
+            <p>Все достопримечательности<br> находятся очень близко</p>
+          </li>
+          <li class="feature-item">
+            <h3>Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+          </li>
+          <li class="feature-item">
+            <h3>Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон<br> и толпится там</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="hotel-search">
