@@ -64,7 +64,7 @@ img {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 1054px;
+  width: 1056px;
   margin: 0;
   padding: 0;
 
@@ -178,18 +178,16 @@ img {
 
 .feature-and-picture {
   display: flex;
+  height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
 .feature-and-picture .feature {
-  display: flex;
-  flex-direction: column;
   width: 400px;
 }
 
 .feature-and-picture .picture {
-  height: 256px;
   width: 800px;
   overflow: hidden;
 }
@@ -247,7 +245,7 @@ img {
   color: #000000;
 }
 
-.hotel-search p {
+.hotel-search .hotel-search-info {
   margin: 0;
   margin-bottom: 45px;
 }
@@ -284,22 +282,30 @@ img {
   padding: 55px;
   width: 460px;
 
+  background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hotel-search-item {
   display: flex;
+  position: relative;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  margin: 15px auto;
-  width: 100%;
 }
 
-.hotel-search-item input[type="text"] {
-  width: 315px;
-  height: 40px;
-  padding-right: 30px;
+.hotel-search-item label {
+  display: block;
+  padding-top: 8px;
+}
+
+.hotel-search-item input {
+  box-sizing: border-box;
+  height: 37px;
+  padding: 10px;
   font: inherit;
 
   color: #000000;
@@ -310,18 +316,62 @@ img {
   border: none;
 }
 
-.hotel-search-form .short {
-  display: flex;
-  width: 230px;
+.long-items .hotel-search-item {
+  width: 100%;
 }
 
-.hotel-search-form .short input[type="text"] {
-  width: 40px;
-  padding: 0 35px;
+.long-items input {
+  width: 345px;
+  padding-right: 30px; /* -- */
+  /* width: 315px; */
+}
+
+
+.long-items .calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 37px;
+
+  background-color: #f2f2f2;
+}
+
+.long-items .hotel-search-item::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 10px;
+
+  width: 21px;
+  height: 22px;
+
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.short-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-items .hotel-search-item {
+  width: 50%;
+}
+
+.short-items input {
+  width: 115px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.short-items .hotel-search-item:last-child label {
+  padding-left: 50px;
 }
 
 .hotel-search-form .search-btn {
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 15px 0;
   width: 100%;
 
@@ -345,72 +395,84 @@ img {
   padding: 35px 0;
 
   color: #000000;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer .container {
   display: flex;
   justify-content: space-between;
-  width: 1056px;
   margin: 0 auto;
+  width: 1056px;
+}
+
+.footer-hashtag,
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 240px;
+
+  line-height: 26px;
 }
 
 .footer-hashtag {
-  margin: 0 auto;
-  width: 240px;
+  margin-left: 10px;
 
+  text-align: center;
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
 }
 
 .footer-social {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  width: 240px;
+  width: 150px;
 
   font-size: 0;
   list-style: none;
 }
 
 .social-btn {
-  display: block;
-  width: 45px;
-  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
-  background-image: url("../img/sprite-sm.png");
-  background-repeat: no-repeat;
 }
 
-.social-btn-tw {
-  background-position: -36px 4px;
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #669ec0;
 }
 
-.social-btn-fb {
-  background-position: 6px -36px;
+.social-btn:active {
+  background-color: #5496bd;
 }
 
-.social-btn-yt {
-  background-position: 3px 4px;
+.social-btn:active path {
+  opacity: 0.3;
 }
 
 .footer-copyright {
-  margin: 0 auto;
-  width: 240px;
-
-  line-height: 26px;
+  margin-right: 10px;
 }
 
 .footer-copyright .academy-pic {
-  display: inline-block;
-  margin-left: 10px;
-  width: 120px;
-  height: 45px;
-  font-size: 0;
-  vertical-align: middle;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  width: 115px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.footer-copyright .academy-pic:hover path,
+.footer-copyright .academy-pic:focus path {
+  fill: #81b3d2;
+}
+
+.footer-copyright .academy-pic:active path {
+  fill: #bdbbbc;
 }
