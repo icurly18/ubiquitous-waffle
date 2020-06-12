@@ -43,6 +43,8 @@ img {
   overflow: hidden;
 }
 
+
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -66,7 +68,7 @@ img {
   justify-content: space-between;
   width: 1056px;
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
 
   list-style: none;
 }
@@ -80,7 +82,7 @@ img {
 
 .site-navigation a {
   display: block;
-  padding: 15px;
+  padding: 15px 0;
 
   vertical-align: middle;
   color: #000000;
@@ -116,6 +118,8 @@ img {
   padding: 75px 0;
   margin: 0 auto;
 }
+
+
 
 .intro {
   margin-bottom: 55px;
@@ -386,6 +390,176 @@ img {
 .hotel-search-form .search-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+
+
+.filters {
+  padding: 30px 72px;
+  color: #ffffff;
+  background-color: #3e759e;
+  /* background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center -82px;
+  background-repeat: no-repeat;
+  filter: blur(10px); */
+}
+
+.filters-list {
+  display: flex;
+}
+
+.filters-list fieldset {
+  border: none;
+}
+
+.filters-list legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-structure,
+.filter-house {
+  width: 255px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-structure legend,
+.filter-house legend {
+  margin-bottom: 20px;
+}
+
+.filter-structure ul,
+.filter-house ul {
+  margin: 0;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.filter-range {
+  width: 330px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.filter-range .price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-range .price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.filter-range .price-controls label {
+  display: inline-block;
+
+  font-size: 14px; /* мб не надо указывать */
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.filter-range .price-controls .min-price,
+.filter-range .price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter-range .price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.filter-range .range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.filter-range .range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range .range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.filter-range .range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.filter-range .range-toggle-min {
+  left: 0;
+}
+
+.filter-range .range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 
