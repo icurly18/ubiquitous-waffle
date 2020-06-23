@@ -394,6 +394,7 @@ img {
   position: relative;
   padding: 30px 0;
   width: 568px;
+
   background-color: #766357;
 }
 
@@ -849,6 +850,8 @@ img {
   display: flex;
 }
 
+
+
 .sort {
   padding: 30px 0;
 
@@ -959,12 +962,130 @@ img {
 }
 
 .hotel-item {
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 23px;
+  padding: 30px 0;
 
   border-bottom: 1px solid #e5e5e5;
 }
+
+.hotel-item-image {
+  width: 135px;
+  height: 90px;
+
+  margin-right: 30px;
+}
+
+.hotel-item-info,
+.hotel-item-rating {
+  line-height: 21px;
+}
+
+.hotel-item-info h3 {
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 7px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-item-info .hotel-name {
+  color: #000000;
+}
+
+.hotel-item-info .hotel-name:hover,
+.hotel-item-info .hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotel-item-info .hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-item-info .type-and-price {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.type-and-price .type {
+  display: inline-block;
+  width: 110px;
+  margin-right: 3px;
+}
+
+.type-and-price .price {
+  display: inline-block;
+  width: 142px;
+}
+
+.hotel-item-btn {
+  display: inline-block;
+  padding: 3px 0;
+
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.more-btn {
+  width: 110px;
+  margin-right: 3px;
+
+  background-color: #81b3d2;
+}
+
+.more-btn:hover,
+.more-btn:focus {
+  background-color: #669ec0;
+}
+
+.more-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.book-btn {
+  width: 142px;
+
+  background-color: #766357;
+}
+
+.book-btn:hover,
+.book-btn:focus {
+  background-color: #604e43;
+}
+
+.book-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.hotel-item-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.rating-stars .star {
+  margin-left: 2px;
+}
+
+.hotel-item-rating .rating-number {
+  display: inline-block;
+  width: 110px;
+  padding: 3px 0;
+
+  color: #666666;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+
 
 
 
@@ -972,7 +1093,7 @@ img {
 .main-footer {
   display: flex;
   /* margin-top: 78px; */
-  padding: 35px 0;
+  padding: 36px 0;
 
   color: #000000;
 }
